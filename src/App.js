@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+import Header from './components/Header';
+import HomePage from './components/HomePage';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes
+} from "react-router-dom";
+import RetrosPage from './components/RetrosPage';
+import ShoutOuts from './components/ShoutOuts';
+import Icebreakers from './components/Icebreakers';
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <header className="App-header">
+          <Header />
+        </header>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+        <Routes>
+          <Route path="/retros" element={<RetrosPage />} />
+        </Routes>
+        <Routes>
+          <Route path="/shout" element={<ShoutOuts />} />
+        </Routes>
+        <Routes>
+          <Route path="/icebreaker" element={<Icebreakers />} />
+        </Routes>
+      </div>
+    </Router>
+
+
   );
 }
 

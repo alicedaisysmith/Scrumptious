@@ -1,0 +1,25 @@
+.fingers {
+    color: rgb(202, 139, 21);
+    padding: 0 50px;
+    font-family: nazare, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.header {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: rgb(202, 139, 21);
+    font-family: roc-grotesk, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.header:hover {
+    color: rgb(82, 105, 213);
+}
+
+.link {
+    color: rgb(202, 139, 21);
+}
+

@@ -1,0 +1,103 @@
+.iceBreaker {
+    background-color: rgb(255, 240, 240);
+
+}
+.title {
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 5%;
+    margin-top: 0%;
+    color: rgb(82, 105, 213);
+}
+
+
+
+.boxwrapper {
+    width: 90%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 5px;
+    margin-left: 5%;
+}
+.container-wrapper {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: nazare, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: rgb(54, 53, 49);
+
+}
+
+.container-wrapper > p {
+    margin: 5% 5% 0%;
+}
+
+.bg-green{
+    background-color: rgb(119, 192, 162);
+
+}
+.bg-blue{
+    background-color: rgb(82, 105, 213);
+
+}
+.bg-pink{
+    background-color:  rgb(245, 207, 200);
+
+}
+.bg-orange{
+    background-color:  rgb(253, 77, 52);
+
+}
+
+p.flagAnswer {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 15px;
+}
+    
+p.brainAnswer {
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+}
+p.flagTitle {
+    margin-bottom: 1%;
+}
+
+p.bondingTitle {
+    margin-bottom: 1%;
+}
+
+p.thoughtTitle {
+    margin-bottom: 1%;
+}
+p.brainteaserTitle {
+    margin-bottom: 1%;
+}
+
+button {
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    color: rgb(54, 53, 49);
+}
+.nextThoughtButton {
+    margin-top: 10%;
+}

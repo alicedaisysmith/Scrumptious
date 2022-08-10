@@ -1,0 +1,35 @@
+.retrospage {
+    background-color: rgb(255, 240, 240);
+}
+
+label {
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    display: flex;
+    margin-left: 10%;
+    color: rgb(202, 139, 21);
+    
+}
+input {
+    width: 80%;
+    padding: 30px 0px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 2px solid rgb(82, 105, 213);
+    border-radius: 10px;
+    
+    
+}
+
+.submitButton {
+    padding: 5px 0px;
+    width: 20%;
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    color: rgb(82, 105, 213);
+}
+
