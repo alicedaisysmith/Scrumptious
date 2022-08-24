@@ -1,103 +1,196 @@
 .iceBreaker {
-    background-color: rgb(255, 240, 240);
-
+  background-color: rgb(255, 240, 240);
+  
 }
 .title {
-    font-family: forma-djr-micro, sans-serif;
+  /* font-family: forma-djr-micro, sans-serif;
     font-weight: 500;
-    font-style: normal;
-    font-size: 30px;
-    display: flex;
-    align-items: flex-start;
-    margin-left: 5%;
-    margin-top: 0%;
-    color: rgb(82, 105, 213);
+    font-style: normal; */
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5%;
+  margin-top: 0%;
+  color: rgb(82, 105, 213);
 }
-
-
 
 .boxwrapper {
-    width: 90%;
-    height: 600px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    grid-gap: 5px;
-    margin-left: 5%;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 300px 420px;
+  grid-gap: 20px;
+  margin-left: 5%;
+  padding-bottom: 50px;
 }
 .container-wrapper {
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: nazare, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 20px;
-    color: rgb(54, 53, 49);
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  font-family: montserrat, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  background-color: rgb(82, 105, 213);
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: rgb(253, 77, 52) 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: roc-grotesk, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
 }
 
 .container-wrapper > p {
-    margin: 5% 5% 0%;
+  margin: 5% 5% 0%;                           
 }
 
-.bg-green{
-    background-color: rgb(119, 192, 162);
-
+.bg-green {
+  background-color: rgb(119, 192, 162);
+  color: rgb(82, 105, 213);
+  box-shadow: rgb(82, 105, 213) 4px 4px 0 0, #000 4px 4px 0 1px;
 }
-.bg-blue{
-    background-color: rgb(82, 105, 213);
-
+.bg-blue {
+  background-color: rgb(82, 105, 213);
+  color: rgb(119, 192, 162);
+  box-shadow: rgb(119, 192, 162) 4px 4px 0 0, #000 4px 4px 0 1px;
 }
-.bg-pink{
-    background-color:  rgb(245, 207, 200);
-
+.bg-pink {
+  background-color: rgb(245, 207, 200);
+  color: rgb(253, 77, 52);
+  box-shadow: rgb(253, 77, 52) 4px 4px 0 0, #000 4px 4px 0 1px;
 }
-.bg-orange{
-    background-color:  rgb(253, 77, 52);
-
+.bg-orange {
+  background-color: rgb(253, 77, 52);
+  color: rgb(245, 207, 200);
+  box-shadow: rgb(245, 207, 200) 4px 4px 0 0, #000 4px 4px 0 1px;
 }
 
 p.flagAnswer {
-    margin-top: 1%;
-    margin-bottom: 1%;
-    font-size: 15px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-size: 15px;
 }
-    
-p.brainAnswer {
-    font-family: forma-djr-micro, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 15px;
-    margin-top: 1%;
-    margin-bottom: 1%;
 
+p.brainAnswer {
+  /* font-family: forma-djr-micro, sans-serif;
+  font-weight: 500;
+  font-style: normal; */
+  font-family: montserrat, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 p.flagTitle {
-    margin-bottom: 1%;
+  margin-bottom: 1%;
 }
 
 p.bondingTitle {
-    margin-bottom: 1%;
+  margin-bottom: 1%;
 }
 
 p.thoughtTitle {
-    margin-bottom: 1%;
+  margin-bottom: 1%;
 }
 p.brainteaserTitle {
-    margin-bottom: 1%;
+  margin-bottom: 1%;
 }
 
-button {
-    font-family: forma-djr-micro, sans-serif;
+/* /* button {
+    /* font-family: forma-djr-micro, sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 15px;
     color: rgb(54, 53, 49);
+    margin-bottom: 10px; */
+
+button {
+  appearance: button;
+  background-color: rgb(82, 105, 213);
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: rgb(253, 77, 52) 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: roc-grotesk, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin-bottom: 10px;
 }
-.nextThoughtButton {
-    margin-top: 10%;
+
+button:focus {
+  text-decoration: none;
+}
+
+button:hover {
+  text-decoration: none;
+}
+
+button:active {
+  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  outline: 0;
+}
+
+button:not([disabled]):active {
+  box-shadow: rgb(253, 77, 52) 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  button {
+    padding: 12px 50px;
+  }
+}
+
+.thought {
+  flex: 1;
+}
+.question {
+  flex: 1;
+}
+
+.brainTeaserWrapper {
+  flex: 1;
+  margin: 5% 5% 0;
+}
+.flagWrapper {
+  flex: 1;
+}
+.flagImg {
+  max-height: 190px;
 }

@@ -2,14 +2,15 @@ import "./ShoutOuts.css";
 import { useState } from "react";
 import Modal from "./Modal";
 
-
-//While we build the UI we want a list of pretend shout outs to help us see how it will look
-//Later we will move this list into a useState so that users can add their own shoutouts using the form but don't worry about this for now
-
-//Each shoutout is an string
-const shoutOuts = []
-
 const ShoutOuts = () => {
+  const [shoutouts, setShoutouts] = useState([])
+  const storeShoutout = (newShoutout) => {
+    const shoutoutsCopy = shoutouts.slice()
+    // slice is a way to duplicate the shoutout array as react was being to clever and thinking nothing had changed
+    shoutoutsCopy.unshift(newShoutout)
+    // unshift pushed it out
+    setShoutouts(shoutoutsCopy)
+  }
   const [showModal, setShowModal] = useState(false);
   const displayShowModal = () => {
     setShowModal(true)
@@ -19,17 +20,15 @@ const ShoutOuts = () => {
   };
 
   return (
-    <div>
+    <div className="shoutWrapper">
       <h1>Give your team some recognition...</h1>
-      <button onClick={displayShowModal}>Create a new shout out</button>
-      {showModal ? <Modal onCancelClick={falseShowModal} /> : null}
+      <button className="shoutoutButton" onClick={displayShowModal}>Create a new shout out</button>
+      {shoutouts.map((shoutout) => <p className="shoutouts">{shoutout}</p>)}
+      {showModal ? <Modal onCancelClick={falseShowModal} saveSubmitState={storeShoutout} /> : null}     
+      {/* {showModal ? <Modal onCancelClick={falseShowModal} saveSubmitState={storeShoutout} /> : null} */}
 
-      {/*Here we create a div which holds a list of shoutouts*/}
-      {/*Why not add some styling to the shoutOutContainer, you could make it a grid?*/}
-      <div className="shoutOutContainer">
-          
-      </div>  
     </div>
+  
   );
 };
 

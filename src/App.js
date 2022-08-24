@@ -7,9 +7,11 @@ import {
   Route,
   Routes
 } from "react-router-dom";
+// React Router DOM enables you to implement dynamic routing in a web app.
 import RetrosPage from './components/RetrosPage';
 import ShoutOuts from './components/ShoutOuts';
 import Icebreakers from './components/Icebreakers';
+import Footer from './components/Section/Footer';
 
 
 const App = () => {
@@ -19,6 +21,8 @@ const App = () => {
         <header className="App-header">
           <Header />
         </header>
+        {/* Header and footer are placed here as they are present 
+        on all pages and don't need to be rerendered everytime we change page */}
         <Routes>
           <Route path="/" element={<HomePage />} />
         </Routes>
@@ -31,6 +35,7 @@ const App = () => {
         <Routes>
           <Route path="/icebreaker" element={<Icebreakers />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
 

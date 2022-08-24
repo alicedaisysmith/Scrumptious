@@ -1,6 +1,6 @@
 import './HomePage.css';
 import teamimg from '../images/shapes-dribbbleteam.webp'
-import mustsun from '../images/noun-sun-mustard.png'
+import mustsun from '../images/noun-sun-mustard-circle.png'
 
 const HomePage = () => {
     return (
@@ -17,13 +17,14 @@ const HomePage = () => {
 
                 <div className='aboutWrapper'>
                     <h2 className='aboutTitle'>Sprint off into the sunset...</h2>
-                    <p className='aboutPara'>Scrumptious is your one stop shop for creating well connected and intuative teams. Our scrum management system allows you to break the ice, celebrate success, grapple with the shortcomings of the sprint and ultimately resolve issues to help boost productivity and performance for sprints to come.</p>
+                    <p className='aboutPara'>Scrumptious is your one stop shop for creating well connected and intuitive teams. Our scrum management system allows you to break the ice, celebrate success, grapple with the shortcomings of the sprint and ultimately resolve issues to help boost productivity and performance for sprints to come.</p>
                 </div>
                 <div className='imgWrapper'>
 
                     <img src={mustsun} className='sun-logo' />
                 </div>
             </div>
+            
 
         </div>
     )

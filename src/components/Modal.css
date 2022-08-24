@@ -2,6 +2,7 @@
 
 .modal {
     position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
     right: 0;
@@ -10,11 +11,75 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    
 }
 
 .modalContent {
-    background-color: blanchedalmond;
-    width: 70%;
+    background-color: rgb(245, 207, 200);
+    width: 50%;
+    height: 70%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5%;
+    box-shadow: rgb(202, 139, 21) 4px 4px 0 0, rgb(245, 207, 200) 4px 4px 0 2px;
+}
+
+.buttonWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:16px;
+    align-items: center;
+    margin-top: 16px;
+}
+
+label {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+select {
+    /* margin: 10px, 0, 10px, 0;
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 500; */
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    appearance: button;
+    background-color: rgb(82, 105, 213);
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: rgb(253, 77, 52) 4px 4px 0 0, #000 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: roc-grotesk, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 20px;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+
+}
+option {
+font-family: forma-djr-micro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.dropdowns {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-right: 20px;
 }

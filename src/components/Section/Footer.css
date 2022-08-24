@@ -1,0 +1,38 @@
+footer {
+    background-color: rgb(202, 139, 21);
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  
+
+}
+
+footer h1 {
+    
+    color: rgb(255, 240, 240); 
+    padding: 0;
+    margin: 0;
+}
+
+.blueSun {
+    max-height: 150px;
+    max-width: 150px;
+}
+.footer::before { 
+    position:absolute;
+    top: -50px;
+    left: 0px;
+    width: 100%;
+    content:" ";
+    background: 
+    radial-gradient(circle closest-side, rgb(202, 139, 21) 100%, rgb(255, 240, 240) 40%);
+    background-color: rgb(169, 50, 80);
+    background-size:50px 100px;
+    height:50px;
+    background-repeat: repeat-x;
+  }
+  .footWrapper {
+    padding-top: 30px;
+  }
