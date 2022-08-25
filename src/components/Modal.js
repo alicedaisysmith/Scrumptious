@@ -64,8 +64,9 @@ const Modal = ({ onCancelClick, saveSubmitState }) => {
             {teams.map((team) => (
               <option value={team.teamName}>{team.teamName}</option>
             ))}
-            {/* for every entity within the array path down one level
-             and add teamname as the value attribute for option and as the content for option */}
+            {/* the .map function will go through each object in an array and return something. In this case we have a list 
+            of teams - when I do teams.map(...) it will perform the function inside of the brackets on each 'team'
+            In this case we are just making an option element with the name of the team */}
           </select>
           <label>Employee name</label>
           <select name="selectTeam" onChange={storeSelectedName}>

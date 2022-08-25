@@ -34,6 +34,8 @@ const App = () => {
         </Routes>
         <Routes>
           <Route path="/icebreaker" element={<Icebreakers />} />
+          {/*  the paths are where will be able to find our webpage - it is the usal website with /... 
+          we are outlining where we want the components to appear*/}
         </Routes>
         <Footer />
       </div>

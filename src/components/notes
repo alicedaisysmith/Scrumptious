@@ -1,0 +1,22 @@
+1)	Routing - I used 'react-router-dom' that gave me some components. We used 'Link' components on the Header so that it changes the URL and 'Route' components in App.jsx to display the correct content depending on what the URL is
+
+2)	I used useState hooks on the icebreaker page to show/hide the answers and change the text on the button.
+
+
+3)	I also used useState to help with displaying random questions/flags/etc. When we click next, it calls a function to select a random string from the array and update the state of that field, so we show a new message.
+
+4)	on the Shoutouts page we have a modal. This again uses useState to show/hide the modal. We have to pass through 'setShowModal' into the Modal component as a prop so that it can update the 'showModal' state on the RetrosPage component.
+
+
+5)	On the modal we have a form. Inside the form we have several fields. Every time the field changes value, onChange is called. We set onChange to update a state object we create. E.g we create 'name' state -> we create a new <input> element for name -> we call setName when onChange is called on the input so our state always contains the same info as on the screen.
+
+6)	when we click submit on the modal, it builds a new string based on the values saved in state. This new string is then saved to the 'shoutouts' state on the Shoutouts component.
+
+
+7)	we then iterate through our list of strings (the Shoutouts state object) and display each one on the screen.
+
+8)	we do a very similar thing for the retros page. We save the retro object to our state but don't do anything with it yet, we just show a thank you message
+
+Improvements: 
+1. Mobile responsivity - making it all work on any size screen
+2. Using redux or a backend rather than use state to store information longer than one render. I could send the new retro object to a database to be stored which means people can access it 

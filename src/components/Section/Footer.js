@@ -14,6 +14,6 @@ const Footer = () => {
     )
 }
 
-
+// I didn't get chance to make the footer funcitonal but could do this to improve
 
 export default Footer
